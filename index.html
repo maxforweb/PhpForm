@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <header>
+        <span>110 sales@jooby.eu <br/> +00 000 000 00 00</span>
+        <div class="burger-menu" id="burger">
+            <h4>MENU</h4>
+            <span id="rotate"></span>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Press-center</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Partnership</a>
+                </li>
+                <li class="nev-item">
+                    <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
+                    </form>         
+                </li>
+                <li class="nev-item">
+                    <div>
+                        <img src="img/login-icon.png" alt="icon">
+                        <a href="#">Log in</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>EN</option>
+            <option value="2">RU</option>
+        </select>
+
+    </header>
+   
+    <section class="mainFirst">
+        <div class="logo-nav">
+            <img src="img/120-LOGO.png">
+            <div>
+                <a href="#">Home </a>
+                <span> > </span>
+                <a href="#">Contacts</a>
+            </div>
+        </div>
+        <ul class="nav">
+            <li class="nav-item">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">SMART</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Downloads</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="mainSecond">
+        <h1>CONTUCT US</h1>
+        <img src="img/map.png">
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item">Europe</li>
+                <li class="list-group-item">Infomir GmbH </li>
+                <li class="list-group-item"> Kaiserstr.56 </li>
+                <li class="list-group-item">60329, Frankfurt am Main (Germany)</li>
+                <li class="list-group-item">Tel: <a href="tel:+49 69 174 27 031">+49 69 174 27 031</a></li>
+                <li class="list-group-item">E-mail: <a href="mailto:sales#jooby.eu">sales@jooby.eu</a></li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">Mena</li>
+                <li class="list-group-item">Infomir Lighting L.L.C </li>
+                <li class="list-group-item"> I rise Towers; </li>
+                <li class="list-group-item"> Office No: 10C 7; Barsha Heights</li>
+                <li class="list-group-item"> Dubai UAE</li>
+                <li class="list-group-item">Tel: <a href="tel:+49 69 174 27 031">+49 69 174 27 031</a></li>
+                <li class="list-group-item">E-mail: <a href="mailto:sales#jooby.eu">sales@jooby.eu</a></li>
+            </ul>
+            <ul class="list-group">
+                    <li class="list-group-item">Ukraine</li>
+                    <li class="list-group-item">4/D, Marshal Zhukov Avenue, Odessa </li>
+                    <li class="list-group-item">Ukraine</li>
+                    <li class="list-group-item">Tel: </li>
+                    <li class="list-group-item"><a href="tel:+49 69 174 27 031">+49 69 174 27 031</a></li>
+                    <li class="list-group-item"><a href="tel:+49 69 174 27 031">+49 69 174 27 031</a></li>
+                    <li class="list-group-item"><a href="tel:+49 69 174 27 031">+49 69 174 27 031</a></li>
+                    <li class="list-group-item">E-mail: <a href="mailto:sales#jooby.eu">sales@jooby.eu</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="form">
+        <form action="src/form.php" method="POST" id="forMain">
+            <div  class="form-row">
+                <div class="col">
+                    <label for="inputName">Name</label>
+                    <input type="text"  id="inputName" name="name"  placeholder="First name">
+                </div>
+                <div class="col">
+                    <label for="inputCompany">Company</label>
+                    <input type="text"  id="inputCompany" name='company'  placeholder="Company">
+                </div>
+                <div class="col">
+                    <label for="inputEmail">Email</label>
+                    <input type="email"  id="inputEmail" name="email" placeholder="Email">
+                </div>
+                <div class="col">
+                    <label for="inputPhone">Phone</label>
+                    <input type="tel"  id="inputPhone" name="tel" placeholder="Phone">
+                </div>
+                <div class="col">
+                    <label for="inputCountry">Country</label>
+                    <select id="inputCountry" name="country">
+                    <option>Азербайджан</option>
+                    <option>Армения</option>
+                    <option>Белорусь</option>
+                    <option>Казахстан</option>
+                    <option>Киргизия</option>
+                    <option>Республика Молдова</option>
+                    <option>Россия</option>
+                    <option>Таджикистан</option>
+                    <option>Туркменистан</option>
+                    <option>Узбекистан</option>
+                    <option>Украина</option>
+                    <option>США</option>
+                    <option>Великобритания</option>
+                    <option>Франция</option>
+                    <option>Исландия</option>
+                    <option>Норвегия</option>
+                    <option>Италия</option>
+                    <option>Испания</option>
+                    <option>Канада</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <textarea name="message" placeholder="Message..."></textarea>
+                <input type="submit" id='send' name="btn_submit" value="Send"></input>   
+            </div> 
+        </form>
+    </section>
+
+    <footer>
+        <ul class="list-group">
+            <li class="list-group-item">NAVIGATION</li>
+            <a href="#" class="list-group-item">Products  </a>
+            <a href="#" class="list-group-item">Services </a>
+            <a href="#" class="list-group-item">SMART </a>
+            <a href="#" class="list-group-item"> Projects </a>
+            <a href="#" class="list-group-item">Documents Contacts</span></a>
+            <a href="#" class="list-group-item">Contacts</span></a>
+        </ul>
+        <ul class="list-group">
+            <li class="list-group-item">RECENT POSTS</li>
+            <a href="#" class="list-group-item">Article 01 </a>
+            <a href="#" class="list-group-item"> Article 02</a>
+            <a href="#" class="list-group-item">Article 03</a>
+            <a href="#" class="list-group-item">Article 04</a>
+        </ul>
+        <ul class="list-group">
+            <li class="list-group-item">CONNECT WITH US</li>
+            <li class="list-group-item">4-D, Marshal Zhukov Avenue, </li>
+            <li class="list-group-item"> Odesa </li>
+            <li class="list-group-item">Ukraine, 65121 </li>
+            <li class="list-group-item">Tel: <a href="tel:+49 69 174 27 031">+49 69 174 27 031</a></li>
+            <li class="list-group-item">E-mail: <a href="mailto:sales#jooby.eu">sales@jooby.eu</a></li>
+        </ul>
+        <div>
+            <li class="list-group-item">WHERE TO BUY</li>
+            <img src="img/map2.png">
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>

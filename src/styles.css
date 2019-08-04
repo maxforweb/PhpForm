@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "OpenSans";
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  ul, li, div, body, main, section, aside, article, header, footer, nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  button {
+    border: none;
+    background-color: initial;
+    cursor: pointer;
+  }
+  
+  a[href], li {
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+  
+
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #0060a8;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+header #burger{
+    display: none;
+}
+
+header nav ul {
+    margin: 0;
+}
+
+header div{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+}
+
+header div img {
+    width: 30%;
+    height: 60%
+}
+
+header .form-inline {
+    width: 80%;
+}
+
+header .form-inline .form-control {
+    width: 100%;
+    height: 30px;
+}
+
+.custom-select {
+    width: 7%;
+    background-color: initial;
+    border: none;
+    color: #fff;
+}
+
+.custom-select option {
+    background-color: #0060a8;
+    border: none;
+    color: #fff; 
+}
+
+.mainFirst{
+    padding-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+.mainFirst .logo-nav{
+    flex-direction: column;
+}
+
+.mainFirst .logo-nav div {
+    width: 70%;
+    justify-content: space-around;
+}
+
+.mainFirst .logo-nav div a:first-child, .mainFirst .logo-nav div span {
+    color: #7a7979
+}
+
+.mainFirst .logo-nav div a:first-child:hover{
+    color: #0060a8;
+}
+
+.mainFirst .logo-nav div a:last-child{
+    color: #0060a8;
+}
+
+.mainFirst .nav {
+    align-items: center;
+}
+
+.mainFirst .nav button{
+    background-color: initial;
+    color: #0060a8;
+    border: none;
+}
+
+.show>.btn-secondary.dropdown-toggle{
+    color: #0060a8;
+    background-color: initial;
+    border: none;
+}
+
+.mainFirst .nav li a{
+    color: #0060a8;
+}
+
+.mainSecond {
+    padding-top: 60px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mainSecond h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    color: #0060a8;
+}
+
+.mainSecond div{
+    width: 100%;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.mainSecond div ul li:first-child{
+    color: #0060a8;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Ubuntu";
+    border: none;
+}
+
+.mainSecond div ul li {
+    border: none;
+    color: #7a7979;    
+}
+.mainSecond > div > ul > li > a {
+    color: #0060a8;
+}
+
+.form {
+    width: 100%;
+    margin: 40px auto;
+    justify-content: center; 
+}
+
+form {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+form > .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select, form textarea {
+    border: 1px solid #0060a8;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.col{
+    flex-direction: column;
+    width: 5%;
+    margin: 5px auto;
+}
+
+form div:last-child{
+    flex-direction: column;
+
+}
+
+form div:last-child input{
+    width: 20%;
+    margin: 5px auto;
+    background-color: #0060a8;
+    color: #fff;
+}
+
+footer{
+    background-color: #7a7979;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+footer ul li:first-child{
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Ubuntu";
+    border: none;
+}
+
+footer ul .list-group-item {
+    background-color: initial;
+    border: none;
+}
+
+footer div{
+    align-items: center;
+    flex-direction: column;
+}
+
+footer div .list-group-item{
+    background-color: initial;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Ubuntu";
+}
+
+footer div img {
+    width: 100%;
+}
+
+
+@media (max-width: 900px){
+    header nav{
+        display: none;
+        margin-top: -200px;
+    }
+
+    header .custom-select {
+        width: 10%;
+    }
+
+    header #burger {
+        display: flex;
+        justify-content: space-between;
+        width: 14%;
+    }
+
+     header #burger span {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        border-top: 4px solid #fff; 
+        height: 20px;
+        cursor: pointer;;
+        position: relative;
+        margin-top: 6px;
+    }
+
+     #burger span::before, #burger span::after {
+        display: block;
+        content: "";
+        width: 25px;
+        border-top: 4px solid #fff;
+        transition: all .7s ease;
+        position: relative;
+        top: -10px;
+    }
+
+    #burger span::before{
+        padding-bottom: 5px;
+    }
+
+    .rotate {
+        transform: rotate(45deg);
+        right: 10px;
+    }
+    
+    #burger .rotate::before {
+        transform: translateY(6px);
+    }
+
+    #burger .rotate::after {
+        transform: rotate(90deg);
+        top: -16px
+    }
+
+     header .menu-active {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        left: 37%;
+        margin-top: 0px;
+    }
+
+    header .menu-active ul{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0060a8;
+    }
+
+    header .menu-active ul li {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header .menu-active img{
+        display: none;
+    }
+
+    header .menu-active div{
+        justify-content: center;
+    }
+
+    header .menu-active ul li:hover{
+        background-color: #fff;
+        transition: all 1s ease;
+    }
+    header .menu-active ul li:hover a{
+        color: #0060a8;
+    }
+
+    .form form {
+        height: 85vh;
+    }
+
+    .form-row{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        
+    }
+    
+    .form-row .col {
+        width: 100%;
+    }
+
+    form div:last-child{
+        margin-top: 10px;
+    }
+
+    form div:last-child input {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px){
+    footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px){
+
+    header #burger {
+        width: 30%;
+    }
+    header .custom-select{
+        width: 17%;
+    }
+
+    .mainSecond  img {
+        height: 230px;
+    }
+
+    footer ul {
+        width: 100%;
+        align-items: center;
+    }
+}
